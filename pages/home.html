@@ -9,6 +9,10 @@
       rel="stylesheet"
       href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
     />
+    <script src="../js/jquery-1.12.4.js"></script>
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
   </head>
   <body>
     <!-- 헤더 -->
@@ -23,25 +27,28 @@
     <!-- 간단메뉴 -->
     <div class="Cmenu">
       <div class="item">
-        <div class="icon">
+        <div class="icon icon01">
           <!-- 아이콘 자리 -->
         </div>
-        <p>리모델링 상담신청</p>
+        <p>
+          리모델링<br />
+          상담신청
+        </p>
       </div>
       <div class="item">
-        <div class="icon">
+        <div class="icon icon02">
           <!-- 아이콘 자리 -->
         </div>
         <p>리모델링<br />3D 견적 신청</p>
       </div>
       <div class="item">
-        <div class="icon">
+        <div class="icon icon03">
           <!-- 아이콘 자리 -->
         </div>
         <p>쿠폰/혜택</p>
       </div>
       <div class="item">
-        <div class="icon">
+        <div class="icon icon04">
           <!-- 아이콘 자리 -->
         </div>
         <p>특가</p>
@@ -62,7 +69,7 @@
         </div>
         <div class="items">
           <div class="item">
-            <div class="Pimage">
+            <div class="Pimage Pimage01">
               <!-- 상품이미지 -->
             </div>
             <div class="name">한샘 슬리핑코드 디럭스 SS 매트리스</div>
@@ -75,7 +82,7 @@
             <div class="freeD">무료배송</div>
           </div>
           <div class="item">
-            <div class="Pimage">
+            <div class="Pimage Pimage02">
               <!-- 상품이미지 -->
             </div>
             <div class="name">[특가+페이백]한샘 스테이 드레스룸</div>
@@ -88,7 +95,7 @@
             <div class="freeD">무료배송</div>
           </div>
           <div class="item">
-            <div class="Pimage">
+            <div class="Pimage Pimage03">
               <!-- 상품이미지 -->
             </div>
             <div class="name">[특가]한샘 노마틱 천연 가죽 소파</div>
@@ -101,7 +108,7 @@
             <div class="freeD">무료배송</div>
           </div>
           <div class="item">
-            <div class="Pimage">
+            <div class="Pimage Pimage04">
               <!-- 상품이미지 -->
             </div>
             <div class="name">한샘 미니 식탁 시리즈 모아보기</div>
@@ -114,7 +121,7 @@
             <div class="freeD">무료배송</div>
           </div>
           <div class="item">
-            <div class="Pimage">
+            <div class="Pimage Pimage05">
               <!-- 상품이미지 -->
             </div>
             <div class="name">한샘 어린이책장 3단</div>
@@ -133,7 +140,7 @@
         <div class="title">한샘 시리즈</div>
         <div class="items">
           <div class="item">
-            <div class="Simage">
+            <div class="Simage Simage01">
               <!-- 시리즈 이미지 -->
             </div>
             <div class="subtitle">
@@ -146,7 +153,7 @@
             </div>
           </div>
           <div class="item">
-            <div class="Simage">
+            <div class="Simage Simage02">
               <!-- 시리즈 이미지 -->
             </div>
             <div class="subtitle">
@@ -159,7 +166,7 @@
             </div>
           </div>
           <div class="item">
-            <div class="Simage">
+            <div class="Simage Simage03">
               <!-- 시리즈 이미지 -->
             </div>
             <div class="subtitle">
@@ -176,8 +183,8 @@
     </div>
     <!-- 리모델링 -->
     <div class="remodeling">
-      <div class="title">리모델링</div>
-      <div class="Rimage">
+      <h1>리모델링</h1>
+      <div class="remodeling_image">
         <!-- 리모델링 이미지 자리 -->
       </div>
     </div>
@@ -199,18 +206,16 @@
       </div>
       <!-- 혜택 -->
       <div class="gifts">
-        <div class="items">
-          <div class="item item01">
-            <!-- 이미지 자리 -->
-          </div>
-          <div class="item item02">
-            <!-- 이미지 자리 -->
-          </div>
+        <div class="item item01">
+          <!-- 이미지 자리 -->
+        </div>
+        <div class="item item02">
+          <!-- 이미지 자리 -->
         </div>
       </div>
       <!-- 게시판 -->
       <div class="board">
-        <div class="content">
+        <div class="content notice">
           <div class="title">공지사항<i class="xi-angle-right"></i></div>
           <ul>
             <li>· 개인정보처리방침 변경 (2023.05.19 예정)</li>
@@ -219,36 +224,41 @@
             <li>· 개인정보처리방침 변경(2023.04.27 예정)</li>
           </ul>
         </div>
-        <div class="content">
+        <div class="content customer">
           <div class="title">고객센터<i class="xi-angle-right"></i></div>
-          <div class="item">
-            <ul>
-              <li>· 자주 찾는 질문</li>
-              <li>· 1:1 문의</li>
-            </ul>
-          </div>
-          <div class="item">
-            <li>· 비회원 주문조회</li>
-            <li>· 한샘 회원 혜택</li>
-          </div>
-          <div class="item">
-            <div class="ex">
-              <div class="desc">상품 및 사이트 이용문의</div>
-              <a href="#x">전화상담</a>
+          <div class="items">
+            <div class="item">
+              <ul>
+                <li>· 자주 찾는 질문</li>
+                <li>· 1:1 문의</li>
+              </ul>
             </div>
-            <div class="ex">
-              <div class="desc">A/S 신청, 추가부품 구매</div>
-              <a href="#x">한샘 서비스센터</a>
+            <div class="item">
+              <ul>
+                <li>· 비회원 주문조회</li>
+                <li>· 한샘 회원 혜택</li>
+              </ul>
             </div>
-          </div>
-          <div class="item">
-            <div class="call01">1688-4945</div>
-            <div class="call02">1588-0900</div>
+            <div class="item exes">
+              <div class="ex">
+                <div class="desc">상품 및 사이트 이용문의</div>
+                <div class="span">전화상담</div>
+              </div>
+              <div class="ex">
+                <div class="desc">A/S 신청, 추가부품 구매</div>
+                <div class="span">한샘 서비스센터</div>
+              </div>
+            </div>
+            <div class="item calls">
+              <div class="call">1688-4945</div>
+              <div class="call">1588-0900</div>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <!-- 푸터 -->
     <footer></footer>
+    <script src="../js/common.js"></script>
   </body>
 </html>

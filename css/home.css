@@ -1,0 +1,337 @@
+.hero {
+  width: 100%;
+  height: 530px;
+  background-image: url("../images/hero.jpg");
+  position: relative;
+}
+.hero .text {
+  position: absolute;
+  top: 223px;
+  left: 116px;
+  color: #fff;
+}
+.hero .text h1 {
+  font-size: 60px;
+  font-weight: 500;
+}
+.hero .text p {
+  font-size: 20px;
+  font-weight: 400;
+}
+.Cmenu {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 60px;
+}
+.Cmenu .item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.Cmenu .item .icon {
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #f7f7f7;
+}
+.Cmenu .item p {
+  text-align: center;
+}
+.Cmenu .item .icon01 {
+  background-image: url("../images/icon01.png");
+}
+.Cmenu .item .icon02 {
+  background-image: url("../images/icon02.png");
+}
+.Cmenu .item .icon03 {
+  background-image: url("../images/icon03.png");
+}
+.Cmenu .item .icon04 {
+  background-image: url("../images/icon04.png");
+}
+.store h1 {
+  font-weight: 400;
+  font-size: 40px;
+  margin: 70px 0 10px 119px;
+}
+.store .store_image {
+  width: 100%;
+  height: 200px;
+  background-image: url("../images/slide01.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 100px;
+}
+.family {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.family .title {
+  text-align: center;
+  font-size: 24px;
+  margin-right: 8px;
+}
+.family .items {
+  display: flex;
+  gap: 28px;
+  margin-bottom: 100px;
+}
+.family .items .item {
+  flex: 1;
+}
+.family .items .item .Pimage {
+  width: 219px;
+  height: 219px;
+  background-color: aqua;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.family .items .item .Pimage01 {
+  background-image: url("../images/item01.jpg");
+}
+.family .items .item .Pimage02 {
+  background-image: url("../images/item02.jpg");
+}
+.family .items .item .Pimage03 {
+  background-image: url("../images/item03.jpg");
+}
+.family .items .item .Pimage04 {
+  background-image: url("../images/item04.jpg");
+}
+.family .items .item .Pimage05 {
+  background-image: url("../images/item05.jpg");
+}
+
+.family .items .item .name {
+  margin-top: 25px;
+  font-size: 14px;
+}
+.family .items .item > .price {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 8px 0;
+}
+.family .items .item .Num {
+  display: flex;
+  gap: 5px;
+  font-weight: 500;
+  font-size: 14px;
+}
+.family .items .item .Num .price {
+  color: #ff4043;
+}
+.family .items .item .Num .sale {
+  color: #b5b5b5;
+  text-decoration: line-through;
+}
+.family .items .item .rate {
+  font-size: 12px;
+  color: #b5b5b5;
+  margin: 10px 0;
+}
+.family .items .item .freeD {
+  background-color: #ffeee9;
+  width: 50px;
+  height: 20px;
+  font-size: 11px;
+  text-align: center;
+}
+.series {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.series .title {
+  text-align: center;
+  font-size: 24px;
+}
+.series .items {
+  display: flex;
+  gap: 20px;
+}
+.series .items .item {
+  flex: 1;
+}
+.series .items .item .Simage {
+  height: 550px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.series .items .item .Simage01 {
+  background-image: url("../images/series01.jpg");
+}
+.series .items .item .Simage02 {
+  background-image: url("../images/series02.jpg");
+}
+.series .items .item .Simage03 {
+  background-image: url("../images/series03.jpg");
+}
+.series .items .item .subtitle {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.series .items .item .subtitle p {
+  font-size: 20px;
+}
+.series .items .item .subtitle .arrow {
+  width: 36px;
+  height: 36px;
+  border: 1px solid #ccc;
+  border-radius: 100%;
+  font-size: 20px;
+  position: relative;
+}
+.series .items .item .subtitle .arrow i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.series .items .item .desc {
+  font-size: 14px;
+}
+.remodeling h1 {
+  font-weight: 400;
+  font-size: 40px;
+  margin: 70px 0 10px 119px;
+}
+.remodeling .remodeling_image {
+  width: 100%;
+  height: 200px;
+  background-image: url("../images/remodeling.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 100px;
+}
+.AtoZ {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 60px;
+}
+.AtoZ .title {
+  font-size: 24px;
+  text-align: center;
+}
+.AtoZ .items {
+  display: flex;
+  gap: 22px;
+}
+.AtoZ .items .item {
+  flex: 1;
+  height: 237px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.AtoZ .items .item01 {
+  background-image: url("../images/remodeling01.jpg");
+}
+.AtoZ .items .item02 {
+  background-image: url("../images/remodeling02.jpg");
+}
+.AtoZ .items .item03 {
+  background-image: url("../images/remodeling03.jpg");
+}
+.gifts {
+  display: flex;
+  gap: 22px;
+  margin-bottom: 100px;
+}
+.gifts .item {
+  flex: 1;
+  height: 198px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.gifts .item01 {
+  background-image: url("../images/gifts01.jpg");
+}
+.gifts .item02 {
+  background-image: url("../images/gifts02.jpg");
+}
+.board {
+  display: flex;
+  gap: 22px;
+  margin-bottom: 150px;
+}
+.board .content .title {
+  font-size: 20px;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.board .content .title::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  bottom: 0;
+  left: 0;
+}
+.board .notice {
+  flex: 1;
+}
+.board .customer {
+  flex: 2;
+}
+.board .content {
+  font-size: 14px;
+}
+.board .notice ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.board .customer .items {
+  display: flex;
+  gap: 22px;
+}
+.board .customer .items .item {
+  flex: 1;
+}
+.board .customer .items .item ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.board .customer .items .exes {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.board .customer .items .exes .ex {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.board .customer .items .exes .ex .desc {
+  font-size: 12px;
+}
+.board .customer .items .exes .ex .span {
+  font-size: 15px;
+  font-weight: 600;
+}
+.board .customer .items .calls {
+  display: flex;
+  flex-direction: column;
+  gap: 46px;
+  font-size: 22px;
+  font-weight: 600;
+}
