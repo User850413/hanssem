@@ -43,12 +43,36 @@
 }
 .footer .footer02 .area2 {
   flex: 5;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
 }
+
 .footer .footer02 .area3 {
   flex: 5;
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+}
+.footer .footer02 .area3 .qr {
+  display: flex;
+  gap: 10px;
+  align-content: baseline;
+}
+.footer .footer02 .area3 .qr_img {
+  height: 64px;
+  width: 64px;
+  background-image: url("../images/QR.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
 }
 .footer .footer03 {
-  width: 1242px;
-  padding: 0 20px;
-  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  padding: 22px 0;
+  background-color: #efefef;
+  font-size: 13px;
+  color: #c8c8c8;
 }

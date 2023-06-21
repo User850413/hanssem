@@ -1,0 +1,285 @@
+.header {
+  background-color: #fff;
+}
+.header .gnb > a {
+  color: #000;
+}
+.header .gnb .logo img {
+  filter: none;
+}
+.category {
+  margin-top: 70px;
+  position: relative;
+}
+.category::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #d8d8d8;
+}
+.category .container {
+  display: flex;
+  gap: 22px;
+}
+.category .menus {
+  flex: 1;
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  padding: 22px 30px;
+  font-size: 16px;
+  position: relative;
+}
+.category .menus::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #d8d8d8;
+}
+.category .menus i {
+  font-size: 20px;
+}
+.category .list {
+  flex: 3;
+  display: flex;
+  position: relative;
+}
+.category .list::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #d8d8d8;
+}
+.category .list li {
+  padding: 20px 30px;
+}
+.product .Pname {
+  display: flex;
+  gap: 20px;
+  padding: 40px 0;
+  align-items: center;
+}
+.product .Pname .brand {
+  width: 102px;
+  height: 28px;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #d9d9d9;
+  cursor: pointer;
+  font-size: 14px;
+}
+.product .Pname .name {
+  font-size: 24px;
+}
+.product .Pcost {
+  display: flex;
+  gap: 22px;
+}
+.product .Pcost .Pimage {
+  width: 385px;
+  height: 385px;
+  background-image: url("../images/thumbnail.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.product .Pcost .Pdesc {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 100%;
+}
+.product .Pcost .Pdesc .Pinform {
+  width: 100%;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  display: flex;
+}
+.product .Pcost .Pdesc .Pinform .delivery {
+  margin-top: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 14px;
+}
+.product .Pcost .Pdesc .Pinform .delivery .inform {
+  display: flex;
+}
+.product .Pcost .Pdesc .Pinform .delivery .inform .delive {
+  flex: 1;
+}
+.product .Pcost .Pdesc .Pinform .delivery .inform .sum {
+  flex: 3;
+}
+.product .Pcost .Pdesc .Pinform .sell {
+  flex: 1;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #d8d8d8;
+}
+.product .Pcost .Pdesc .Pinform .sell .sales {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+.product .Pcost .Pdesc .Pinform .sell .sales .cost {
+  display: flex;
+  justify-content: space-between;
+}
+.product .Pcost .Pdesc .Pinform .sell .sales .cost .sum {
+  font-size: 20px;
+  color: #999;
+  text-decoration: line-through;
+  font-weight: 400;
+}
+.product .Pcost .Pdesc .Pinform .sell .result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+.product .Pcost .Pdesc .Pinform .sell .result p {
+  position: relative;
+}
+.product .Pcost .Pdesc .Pinform .sell .result p::after {
+  content: "할인내역";
+  font-size: 10px;
+  padding: 2px;
+  border-radius: 5px;
+  border: 1px solid #ff3c3c;
+  color: #ff3c3c;
+}
+.product .Pcost .Pdesc .Pinform .sell .result .sum {
+  font-size: 34px;
+  font-weight: 600;
+}
+.product .Pcost .Pdesc .Pinform .sell .coupon {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  padding: 8px 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  background-color: #efefef;
+  cursor: pointer;
+}
+.product .Pcost .Pdesc .P_option {
+  width: 100%;
+  border-top: 1px solid #d8d8d8;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  align-items: center;
+}
+.product .Pcost .Pdesc .P_option > p {
+  font-size: 14px;
+}
+.product .Pcost .Pdesc .P_option .options {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.product .Pcost .Pdesc .P_option .options .option {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
+.product .Pcost .Pdesc .P_option .options .option .selection {
+  width: 248px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ccc;
+  align-items: center;
+  cursor: pointer;
+}
+.product .Pbuy {
+  text-align: right;
+  margin-top: 30px;
+}
+
+.product .Pbuy .result div {
+  display: inline-block;
+  font-size: 14px;
+  margin-right: 6px;
+}
+.product .Pbuy .result p {
+  display: inline-block;
+  font-size: 25px;
+  font-weight: 600;
+}
+.product .Pbuy > p {
+  font-size: 12px;
+  color: #666;
+  margin-top: 7px;
+}
+.product .btns {
+  display: flex;
+  justify-content: flex-end;
+  gap: 6px;
+  font-size: 16px;
+  margin-top: 21px;
+}
+.product .btns .btn {
+  border: 1px solid #000;
+  padding: 14px 50px;
+  border-radius: 54px;
+  background-color: #fff;
+  cursor: pointer;
+}
+.product .btns .btn.blk {
+  color: #fff;
+  background-color: #000;
+}
+.description {
+  display: flex;
+  gap: 22px;
+}
+.description .left {
+  width: 895px;
+}
+.description .left .menu {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid #d8d8d8;
+}
+.description .left .menu li {
+  width: 180px;
+  padding: 15px 0;
+  cursor: pointer;
+  align-items: center;
+  text-align: center;
+}
+.description .left .menu li.active {
+  border-bottom: 2px solid #000;
+}
+.description .left .details {
+  width: 100%;
+}
+.description .right {
+  width: 100%;
+}
+.description .right .fixed {
+  position: fixed;
+}
+.description .right .title {
+  padding: 15px 0;
+  font-size: 14px;
+  border-bottom: 1px solid #000;
+}
