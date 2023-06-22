@@ -13,3 +13,4 @@ $(window).scroll(function () {
     $(".header .gnb .logo img").css("filter", "saturate(0%) brightness(1000%)");
   }
 });
+$(".heros").slick();

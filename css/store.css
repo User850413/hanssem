@@ -62,6 +62,9 @@
 .category .list li {
   padding: 20px 30px;
 }
+.product {
+  margin-bottom: 75px;
+}
 .product .Pname {
   display: flex;
   gap: 20px;
@@ -98,7 +101,7 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
-  width: 100%;
+  flex: 1;
 }
 .product .Pcost .Pdesc .Pinform {
   width: 100%;
@@ -253,6 +256,7 @@
 }
 .description .left {
   width: 895px;
+  height: 100%;
 }
 .description .left .menu {
   display: flex;
@@ -270,16 +274,84 @@
   border-bottom: 2px solid #000;
 }
 .description .left .details {
+  display: flex;
+  flex-direction: column;
   width: 100%;
 }
+.description .left .details .image {
+  width: 895px;
+  height: auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.description .left .details .image01 img {
+  width: 100%;
+}
+.description .left .details .image02 img {
+  width: 100%;
+}
+.description .deliver span {
+  display: block;
+  margin: 30px 0 15px;
+}
+.description .deliver p {
+  font-size: 14px;
+  margin-bottom: 60px;
+}
+.description .refund {
+  margin: 5px 0 110px;
+}
+.description .refund span {
+  display: block;
+  margin: 25px 0 10px;
+}
+.description .refund p {
+  font-size: 14px;
+}
 .description .right {
+  margin-top: 5px;
   width: 100%;
 }
 .description .right .fixed {
-  position: fixed;
+  /* position: fixed; */
 }
 .description .right .title {
   padding: 15px 0;
   font-size: 14px;
   border-bottom: 1px solid #000;
+}
+.description .right .items {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 13px;
+}
+.description .right .items .item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.description .right .items .item .Rimage {
+  height: 135px;
+  width: 135px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.description .right .items .item01 .Rimage {
+  background-image: url("../images/side01.jpg");
+}
+.description .right .items .item02 .Rimage {
+  background-image: url("../images/side02.jpg");
+}
+.description .right .items .item03 .Rimage {
+  background-image: url("../images/side03.webp");
+}
+.description .right .items .item04 .Rimage {
+  background-image: url("../images/side04.jpg");
+}
+
+.description .right .items .item p {
+  font-size: 14px;
 }

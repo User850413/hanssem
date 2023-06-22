@@ -6,41 +6,68 @@
     <title>hanssem</title>
     <script src="../js/jquery-1.12.4.js"></script>
     <link rel="stylesheet" href="../css/common.css" />
-    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="../css/login.css" />
     <link rel="stylesheet" href="../css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
   </head>
   <body>
     <!-- 헤더 -->
     <header></header>
-    <div class="login_title">회원 로그인</div>
-    <div class="mLogin">
-      <div class="title">회원로그인</div>
-      <div class="id">
-        <span>아이디(이메일)</span>
-        <input type="text" placeholder="ID 또는 이메일ID" />
+    <div class="container">
+      <div class="login_title">회원 로그인</div>
+      <div class="box">
+        <div class="mLogin">
+          <div class="title">회원로그인</div>
+          <div class="id">
+            <span>아이디(이메일)</span>
+            <input type="text" placeholder="ID 또는 이메일ID" />
+          </div>
+          <div class="pwd">
+            <span>비밀번호</span>
+            <input type="password" placeholder="비밀번호" />
+          </div>
+          <div class="rememberID">
+            <i class="xi-check-square-o"></i>
+            <p>아이디 저장</p>
+          </div>
+          <a href="#x" class="B_btn">로그인</a>
+          <a class="quick" href="#x">간편 로그인</a>
+          <div class="sites">
+            <a href="#x" class="kakao"></a>
+            <a href="#x" class="naver"></a>
+            <a href="#x" class="payco"></a>
+          </div>
+          <div class="btns">
+            <a href="#x" class="btn">아이디/비밀번호 찾기</a>
+            <a href="#x" class="btn">회원가입</a>
+          </div>
+        </div>
+        <div class="nmLogin">
+          <div class="title">비회원 주문 배송/조회</div>
+          <div class="name">
+            <span>이름</span>
+            <input type="text" />
+          </div>
+          <div class="selection">
+            <div class="orderN">
+              <i class="xi-check-circle-o"></i>
+              <p>주문번호</p>
+            </div>
+            <div class="active phoneN">
+              <i class="xi-check-circle"></i>
+              <p>휴대폰 번호</p>
+            </div>
+          </div>
+          <div class="phone">
+            <input type="text" />
+            <div class="cert">휴대폰 인증</div>
+          </div>
+          <a href="#x" class="B_btn">로그인</a>
+        </div>
       </div>
-      <div class="pwd">
-        <span>비밀번호</span>
-        <input type="password" placeholder="비밀번호" />
-      </div>
-      <div class="rememberID">
-        <div class="checkBox"></div>
-        <p>아이디 저장</p>
-      </div>
-      <div class="B_btn">로그인</div>
-      <a href="#x">간편 로그인</a>
-      <div class="sites">
-        <div class="kakao"></div>
-        <div class="naver"></div>
-        <div class="payco"></div>
-      </div>
-      <div class="btns">
-        <div class="btn">아이디/비밀번호 찾기</div>
-        <div class="btn">회원가입</div>
-      </div>
-    </div>
-    <div class="nmLogin">
-      <div class="title">비회원 주문 배송/조회</div>
     </div>
     <!-- 푸터 -->
     <footer></footer>
