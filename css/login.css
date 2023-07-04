@@ -7,6 +7,18 @@
 .header .gnb .logo img {
   filter: none;
 }
+.header .search {
+  border: 1px solid #ddd;
+}
+.header .search input {
+  color: #000;
+}
+.header .search input::placeholder {
+  color: #ddd;
+}
+.header .search i {
+  color: #000;
+}
 .login_title {
   margin-top: 188px;
   font-size: 26px;

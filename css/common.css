@@ -32,12 +32,27 @@ body {
   z-index: 100;
   transition: all 0.3s;
 }
-/* .header:hover {
-  background-color: rgba(256, 256, 256, 100);
+.header:hover {
+  background-color: rgba(256, 256, 256, 1);
 }
 .header:hover .gnb a {
   color: #000;
-} */
+}
+.header:hover .gnb .logo img {
+  filter: none;
+}
+.header:hover .search {
+  border: 1px solid #ddd;
+}
+.header:hover .search input {
+  color: #000;
+}
+.header:hover .search input::placeholder {
+  color: #ddd;
+}
+.header:hover .search i {
+  color: #000;
+}
 .header .gnb {
   display: flex;
   align-items: center;
@@ -75,7 +90,6 @@ body {
   font-weight: 600;
   color: #fff;
 }
-
 .header .gnb .logo {
   cursor: pointer;
   width: 40px;
@@ -88,6 +102,64 @@ body {
   width: 100%;
   height: 100%;
   filter: saturate(0%) brightness(1000%);
+}
+.PH_color::placeholder {
+  color: #ddd;
+}
+/* 카테고리 */
+.category {
+  position: relative;
+}
+.category::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #d8d8d8;
+}
+.category .container {
+  display: flex;
+  gap: 22px;
+}
+.category .menus {
+  flex: 1;
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  padding: 22px 30px;
+  font-size: 16px;
+  position: relative;
+}
+.category .menus::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #d8d8d8;
+}
+.category .menus i {
+  font-size: 20px;
+}
+.category .list {
+  flex: 3;
+  display: flex;
+  position: relative;
+}
+.category .list::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #d8d8d8;
+}
+.category .list li {
+  padding: 20px 30px;
 }
 /* 콘테이너 */
 .container {
