@@ -103,6 +103,9 @@
   font-size: 24px;
   color: #e2e2e2;
 }
+.box .mLogin .rememberID i.active {
+  color: #000;
+}
 .box .mLogin .rememberID p {
   font-size: 12px;
 }
@@ -192,6 +195,7 @@
   display: flex;
   gap: 10px;
   font-size: 14px;
+  cursor: pointer;
 }
 .box .nmLogin .selection .orderN i,
 .box .nmLogin .selection .phoneN i {
@@ -208,14 +212,15 @@
   margin-top: 10px;
   align-items: center;
   margin-bottom: 80px;
+  width: 409px;
 }
 
 .box .nmLogin .phone input {
-  width: 289px;
   font-size: 14px;
   margin-left: 5px;
   padding: 15px 18px;
   border: 1px solid #e2e2e2;
+  flex: 1;
 }
 .box .nmLogin .phone .cert {
   width: 100px;
@@ -223,4 +228,5 @@
   font-size: 13px;
   padding: 15px 0;
   text-align: center;
+  display: none;
 }
